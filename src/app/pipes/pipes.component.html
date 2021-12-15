@@ -1,0 +1,26 @@
+<hr>
+<h1>PIPES</h1>
+<h2>uppercase y lowercase</h2>
+<p>{{name | uppercase}}</p>
+<p>{{name2 | lowercase}}</p>
+<p>{{array[1] | uppercase}}</p>
+<h2>slice</h2>
+<p>{{name | slice:2}}</p><!--slice elimina-->
+<p>{{name2 | slice:0:2}}</p><!--según la cantidad de parametros elimina cosas desde principio o desde final-->
+<h2>decimal</h2>
+<p>{{valorpi | number: '1.0-2'}}</p>
+<h2>percent</h2>
+<p>{{myNum | percent}}</p>
+<p>{{myNum | percent:'1.0-2'}}</p>
+<h2>currency</h2>
+<p>{{salary | currency}}</p>
+<p>{{salary | currency:'currencyCharacter':'€'}}</p>
+<h2>json</h2>
+<p>{{personaje | json}}</p>
+<pre>{{personaje | json}}</pre>
+<h2>async</h2>
+<pre>{{promiseValue | async}}</pre>
+<h2>date</h2>
+<p>{{myDate}}</p>
+<p>{{myDate | date}}</p>
+<pre>{{myDate | date: 'EEE, d of LLL of yyy'}}</pre>

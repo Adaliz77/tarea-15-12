@@ -1,0 +1,20 @@
+<hr>
+<h1>Mis pipes-personalizados...</h1>
+<h3>Números en castellano</h3>
+<ul>
+  <li *ngFor="let valor of array">
+    {{valor | mypipe}}
+  </li>
+</ul>
+<h3>Números en inglés</h3>
+<ul>
+  <li *ngFor="let valor of array">
+    {{valor | mypipe:'ingles'}}
+  </li>
+</ul>
+<h3>Números en portugués</h3>
+<ul>
+  <li *ngFor="let valor of array">
+    {{valor | mypipe:'portugues'}}
+  </li>
+</ul>
